@@ -11,7 +11,7 @@ public class CashbackHackServiceTestjunit4 {
     @Test
 
     public void oneThousand() {
-        int expected = 1000;
+        int expected = 0;
         int actual = cashback.remain(1000);
         assertEquals(actual, expected);
     }
@@ -25,14 +25,14 @@ public class CashbackHackServiceTestjunit4 {
     }
 
     @Test
-    public void trista() {
+    public void randomTestNumber() {
         int expected = 300;
         int actual = cashback.remain(700);
         assertEquals(actual, expected);
     }
 
     @Test
-    public void border999() {
+    public void border1001() {
         int expected = 999;
         int actual = cashback.remain(1001);
         assertEquals(actual, expected);
